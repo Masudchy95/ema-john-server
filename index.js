@@ -32,6 +32,6 @@ client.connect(err => {
 
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`App listening started at http://localhost:${port}`)
 })
